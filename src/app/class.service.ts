@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
-const apiUrl = "https://5e7ca4f2a917d7001668392a.mockapi.io/schools";
+const apiUrl = "https://5e79b50717314d0016133423.mockapi.io/schools";
 @Injectable()
 export class ClassService {
   constructor(private http: HttpClient) {}

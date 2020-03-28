@@ -11,19 +11,16 @@
 	<div *ngIf="classData!=null">
 		<div class="card text-center">
 			<div class="card-header">
-				Information class
+				INFORMATION CLASS
 			</div>
 			<div class="card-body">
 				<h5 class="card-title">Name : {{classData.name}} </h5>
 				<p class="card-text">Number Class :{{classData.room_number}} </p>
 				<p class="card-text">Total Student :{{classData.total_student}} </p>
 				<p class="card-text">Main Teacher :{{classData.main_teacher}} </p>
-				<a [routerLink]="['../../../../edit-class', classData.id, classData.schoolId]" class="btn btn-primary">Edit</a>
+				<a [routerLink]="['../../../../edit-class', classData.id, classData.schoolId]" class="btn btn-outline-warning">Edit</a>
 				&nbsp;&nbsp;
-				<a (click)="removeClass();" class="btn btn-danger">Delete</a>
-			</div>
-			<div class="card-footer text-muted">
-				2 days ago
+				<a (click)="removeClass();" class="btn btn-outline-danger">Delete</a>
 			</div>
 		</div>
 	</div>
