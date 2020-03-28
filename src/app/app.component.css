@@ -1,3 +1,7 @@
 p {
   font-family: Lato;
 }
+.img-fluid{
+  width: 1089px;
+  height: 360px;
+}

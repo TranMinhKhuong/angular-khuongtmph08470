@@ -8,21 +8,23 @@
 			<tr>
 				<th scope="col">#</th>
 				<th scope="col">Name Class</th>
+        <th scope="col">Main Teacher</th>
 				<th scope="col">Number Class</th>
-				<th scope="col">*</th>
+				<th scope="col">Action</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr *ngFor="let data of classesData">
 				<th scope="row">{{data.id}}</th>
 				<td>{{data.name}}</td>
+        <td>{{data.main_teacher}}</td>
 				<td>{{data.room_number}}</td>
 				<td><a [routerLink]="['class-detail', data.id]">Detail</a></td>
 			</tr>
 		</tbody>
 	</table>
 
-  <button [routerLink]="['../../add-class', scId]" class="btn btn-outline-success btnclasslist">
+  <button  [routerLink]="['../../add-class', scId]" class="btn btn-outline-success btnclasslist">
   Add new class</button>
 
 </div>
