@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div class="container">
+	<a routerLink="add-school" style="margin-bottom : 30px;" type="button" class="btn btn-primary">Add new school</a>
+
+	<table class="table">
+		<caption>List of schools</caption>
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Logo</th>
+				<th scope="col"> School Name</th>
+				<th scope="col">*</th>
+
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let sc of schools">
+				<th scope="row">{{sc.id}}</th>
+				<td><img [src]="sc.logo"> </td>
+				<td>{{sc.name}}</td>
+				<td><a [routerLink]="['detail',sc.id]">Detail</a></td>
+			</tr>
+
+		</tbody>
+	</table>
+
+</div>

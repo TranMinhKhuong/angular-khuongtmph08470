@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- <pre>{{classForm.value|json}}</pre> -->
+<div class="container">
+
+	<div align="center" style="margin-bottom:30px;">
+		<h2>Class Form</h2>
+	</div>
+
+	<form [formGroup]="classForm">
+
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">Class name:</span>
+			</div>
+			<input type="text" formControlName="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+			<div class="input-group mb-3" >
+				<div class="input-group-prepend">
+					<span class="input-group-text" id="inputGroup-sizing-default">School name:</span>
+				</div>
+				<input disabled type="text"  class="form-control" aria-label="Sizing example input" [value]="schoolData.name" aria-describedby="inputGroup-sizing-default"> 
+      </div>
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="inputGroup-sizing-default">Room number:</span>
+					</div>
+					<input type="text" formControlName="room_number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="inputGroup-sizing-default">Total student :</span>
+						</div>
+						<input type="text" formControlName="total_student" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="inputGroup-sizing-default">Main teacher :</span>
+							</div>
+							<input type="text" formControlName="main_teacher" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+
+							<div align="center">
+								<button type="button" (click)="saveClass();" class="btn btn-info">Save</button>
+
+							</div>
+
+	</form>
+</div>

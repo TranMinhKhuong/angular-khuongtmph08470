@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  logo="https://iweb.tatthanh.com.vn/pic/3/blog/images/100-mau-logo-dep-ve-nganh-giao-duc(24).JPG";
 }
+

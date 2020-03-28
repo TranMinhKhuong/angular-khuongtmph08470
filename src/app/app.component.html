@@ -1,3 +1,16 @@
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<nav class="navbar navbar-light bg-light">
+	<a class="navbar-brand" routerLink="/">
+		<img [src]="logo" width="40" height="40" class="d-inline-block align-top" alt="">
+    Manager School
+  </a>
+</nav>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h1 class="display-4">Information management of schools. </h1>
+		<p class="lead">This is a  place to store and update school and classroom information around the world.</p>
+	</div>
+</div>
+<router-outlet></router-outlet>
