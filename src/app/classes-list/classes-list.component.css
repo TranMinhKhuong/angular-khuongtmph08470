@@ -1,0 +1,16 @@
+h2{
+  color: yellowgreen;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: red;
+}
+
+.btnclasslist{
+  width: 200px;
+  margin: 0 auto;
+}

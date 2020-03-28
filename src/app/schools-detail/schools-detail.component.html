@@ -11,7 +11,7 @@
 	<div *ngIf="schoolData!=null">
 		<div class="card text-center">
 		<div class="card-header">
-			Information School
+			INFORMATION SCHOOL
 		</div>
 		<div class="card-body">
 			<img [src]="schoolData.logo" style="margin-bottom:20px;">
@@ -19,12 +19,9 @@
 			<p class="card-text">Address : {{schoolData.address}}</p>
 			<p class="card-text">President : {{schoolData.president}}</p>
 			<p class="card-text">Province : {{schoolData.province}}</p>
-      <a [routerLink]="['../../edit-school',schoolData.id]" class="btn btn-primary">Edit</a>
+      <a [routerLink]="['../../edit-school',schoolData.id]" class="btn btn-outline-primary">Edit</a>
       &nbsp;&nbsp;
-      <a (click)="remove()" class="btn btn-danger">Delete</a>
-		</div>
-		<div class="card-footer text-muted">
-			2 days ago
+      <a (click)="remove()" class="btn btn-outline-danger">Delete</a>
 		</div>
 	</div>
 	</div>
