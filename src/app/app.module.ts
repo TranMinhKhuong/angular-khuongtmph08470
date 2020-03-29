@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
 import { AppComponent } from "./app.component";
-import { HelloComponent } from "./hello.component";
 import { SchoolsListComponent } from "./schools-list/schools-list.component";
 import { SchoolsDetailComponent } from "./schools-detail/schools-detail.component";
 import { SchoolsFormComponent } from "./schools-form/schools-form.component";
