@@ -20,7 +20,7 @@ export class SchoolService {
     return this.http.post<any>(apiUrl,School);
   }
   updateSchool(School):Observable<any>{
-    let url =`${apiUrl}/${School.id}`
+    let url =`${apiUrl}/${School.id}`;
     return this.http.put<any>(url,School);
   }
 }
