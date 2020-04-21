@@ -16,7 +16,9 @@
 			<div class="input-group-prepend">
 				<span class="input-group-text" id="inputGroup-sizing-default">School name:</span>
 			</div>
-			<input disabled type="text"  class="form-control" aria-label="Sizing example input" [value]="schoolData.name" aria-describedby="inputGroup-sizing-default"> 
+			<select formControlName="schoolId"  class="form-control">
+				<option *ngFor='let sc of schoolData' [value]="sc.id">{{sc.name}}</option>
+			</select> 
     </div>
 		<div class="input-group mb-3">
 			<div class="input-group-prepend">
