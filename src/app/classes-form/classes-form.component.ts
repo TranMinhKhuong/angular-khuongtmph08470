@@ -36,7 +36,7 @@ export class ClassesFormComponent implements OnInit {
         this.schoolData = data;
       });
       this.schoolService.getSchools().subscribe(data => {
-        this.schoolData = data;
+        this.scData = data;
       });
       if (classId == null) {
         this.classService.getClassesBySchoolId(schoolId).subscribe(data => {
