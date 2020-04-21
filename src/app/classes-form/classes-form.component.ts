@@ -11,6 +11,7 @@ import { SchoolService } from "../school.service";
 export class ClassesFormComponent implements OnInit {
   classForm: FormGroup;
   schoolData = [];
+  scData = [];
   constructor(
     private classService: ClassService,
     private schoolService: SchoolService,
@@ -32,6 +33,9 @@ export class ClassesFormComponent implements OnInit {
       });
       this.schoolService.getSchoolById(schoolId).subscribe(data => {
         console.log(data);
+        this.schoolData = data;
+      });
+      this.schoolService.getSchools().subscribe(data => {
         this.schoolData = data;
       });
       if (classId == null) {
